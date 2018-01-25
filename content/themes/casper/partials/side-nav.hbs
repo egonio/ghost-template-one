@@ -1,0 +1,94 @@
+<div class="side-nav">
+    <div class="container-fluid">
+
+        <!-- Top Intro/Logo/Desc -->
+        <div class="row ">
+            <div class="col-xs-12 top-title">
+                {{#if @blog.logo}}
+                <img class="logo" src="{{@blog.logo}}" />
+                <h3 class="blog-title">{{@blog.title}}</h3>
+                <p class="blog-description">{{@blog.description}}</p>
+                {{else if @blog.title}} {{#author}}
+                <img class="profile" src="{{profile_image}}" /> {{/author}}
+                <h3 class="blog-title-only">{{@blog.title}}</h3>
+                <p class="blog-description">{{@blog.description}}</p>
+                {{else}} {{#author}}
+                <img class="profile" src="{{profile_image}}" />
+                <p class="author-name-only">{{name}}</p>
+                {{/author}}
+                <p class="blog-description">{{@blog.description}}</p>
+                {{/if}}
+            </div>
+            <div class="col-xs-12 sm-icons">
+                {{#author}} {{#if website}}
+                <a href="{{website}}" target="_blank" rel="noopener" class="fa fa-window-maximize"></a>
+                {{/if}} {{#if twitter}}
+                <a href="{{twitter_url}}" class="fa fa-facebook"></a>
+                {{/if}} {{#if facebook}}
+                <a href="{{facebook_url}}" class="fa fa-facebook"></a>
+                {{/if}} {{/author}}
+            </div>
+        </div>
+
+        <hr>
+        <!-- Navigation -->
+        <div class="row">
+            <div class="col-xs-12" style="width: 100%">
+                <ul>
+                    <!-- Loop through the navigation items -->
+                    {{#foreach navigation}}
+                    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}">
+                        <a class="nav-links" href="{{url absolute=" true "}}">{{label}}</a>
+                    </li>
+                    {{/foreach}}
+                    <!-- End the loop -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- ** TESTER **-->
+        <div class="row ">
+            <div class="col-xs-12 top-title">
+                <img class="profile" src="{{@blog.logo}}" />
+                <p class="blog-title">Matthew Welke</p>
+                <p class="blog-description">{{@blog.description}}</p>
+            </div>
+            <!--
+            <div class="col-xs-12 sm-icons">
+                {{#author}} {{#if website}}
+                <a href="{{website}}" target="_blank" rel="noopener" class="fa fa-window-maximize"></a>
+                {{/if}} {{#if twitter}}
+                <a href="{{twitter_url}}" class="fa fa-facebook"></a>
+                {{/if}} {{#if facebook}}
+                <a href="{{facebook_url}}" class="fa fa-facebook"></a>
+                {{/if}} {{/author}}
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" rel="noopener" class="fa fa-twitter"></a>
+                <a href="#" target="_blank" rel="noopener" class="fa fa-window-maximize"></a>
+            </div>
+             -->
+        </div>
+        
+        <hr>
+        <!-- ***** TO BE DELETED, FOR CHECKING PURPOSE ONLY *** -->
+        <div class="row">
+            <div class="col-xs-12" style="width: 100%">
+                <ul>
+                    <li class="nav-links">
+                        <a href="home">BLOG</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home">ABOUT</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="home">OPENS SOURCE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ******** -->
+        <!-- ** End Of TESTER **-->
+
+    </div>
+</div>

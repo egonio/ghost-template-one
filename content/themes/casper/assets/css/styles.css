@@ -1,0 +1,126 @@
+
+.body-wrapper{
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+
+
+.home-template .main{
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-right: 35px;
+    color: white;
+ 
+}
+
+.home-template .nav-left{
+    background-color: rgb(45, 45, 45);
+    padding-top: 20px;
+}
+
+.post-card-content-link{
+    color: white;
+}
+
+.post-card-content-link:hover{
+    color: rgb(31, 182, 219);
+}
+
+/** SIDE NAVS **/
+
+.side-nav ul{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.side-nav .logo{
+    width: 90%;
+    text-align: center;
+}
+
+.side-nav .blog-title{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.side-nav .author-name{
+    text-align: center;
+    font-size: 13px;
+}
+
+.side-nav .blog-description{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(151, 151, 151);
+}
+
+.side-nav .blog-title-only, .side-nav .author-name-only{
+    text-align: center;
+    font-size: 60px;
+}
+
+.side-nav .top-title{
+    text-align: center;
+    width: 100%;
+}
+
+.side-nav .profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    overflow: hidden;
+}
+
+.side-nav .nav-links{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(151, 151, 151);
+}
+
+.side-nav .nav-links{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(151, 151, 151);
+}
+
+.side-nav .nav-links a{
+    color: rgb(224, 224, 224);
+}
+
+.side-nav hr {
+    border-top: 2px solid teal;
+}
+
+/* Style all font awesome icons */
+.side-nav .fa {
+    padding: 7px;
+    font-size:24px;
+    width: 37px;
+    text-align: center;
+    text-decoration: none;
+    background:rgb(92, 92, 92);
+    color: rgb(45, 45, 45);
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Add a hover effect if you want */
+.side-nav .fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.side-nav .sm-icons{
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}

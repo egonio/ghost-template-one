@@ -1,0 +1,33 @@
+<div >
+    <div>
+        <!-- If there's an image -->
+        {{#if feature_image}}
+        <div class="col-xs-4">
+            <a href="{{url}}">
+               <img src="{{feature_image}}" class="img-fluid  img-thumbnail" style=" height: 300px">
+            </a>
+        </div>
+        {{/if}}
+
+        <div class="col-xs-4">
+            <a class="post-card-content-link" href="{{url}}">
+                <header>
+                    {{#if primary_tag}}
+                    <span>{{primary_tag.name}}</span>
+                    {{/if}}
+                    <h2>{{title}}</h2>
+                </header>
+                <section>
+                    <p>{{excerpt words="50"}}</p>
+                </section>
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <footer class="post-card-meta">
+                {{#if author.profile_image}}
+                <img src="{{author.profile_image}}" alt="{{author.name}}" /> {{/if}}
+                <span>{{author}}</span>
+            </footer>
+        </div>
+    </div>
+</div>
